@@ -1,0 +1,130 @@
+/* .services {
+  box-sizing: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-item {
+    flex: 1;
+    padding: 50px 10px;
+    border: rgb(31, 192, 154) solid 1px;
+    text-align: center;
+    margin: 180px 50px;
+    transition: all 1s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-item:hover {
+    box-shadow: 3px 3px 20px lightsteelblue;
+  }
+  
+  .service-item h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    width: 120px;
+    color: #001f38;
+    flex: 1;
+  }
+  
+  .service-item img {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+  }
+   */
+   .services {
+    display: flex;
+    flex-flow: row wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Adjust the top margin for better spacing */
+  }
+  
+  .service-item {
+    flex: 1 1 300px; /* Allow flexible width with a minimum of 300px */
+    padding: 30px 10px;
+    border: rgb(31, 192, 154) solid 1px;
+    text-align: center;
+    margin: 30px 20px; /* Adjust margins for spacing between items */
+    transition: all 1s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .service-item:hover {
+    box-shadow: 3px 3px 20px lightsteelblue;
+  }
+  
+  .service-item h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    width: auto; /* Remove fixed width for better responsiveness */
+    color: #001f38;
+    flex: 1;
+  }
+  
+  .service-item img {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+  }
+  
+  /* Responsive Design */
+  
+  /* Large devices (desktops, 1200px and above) */
+  @media (min-width: 1200px) {
+    .service-item {
+      flex: 1 1 250px; /* Ensure flexibility and proper size on large screens */
+      margin: 50px 30px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px to 1199px) */
+  @media (max-width: 1199px) and (min-width: 768px) {
+    .services {
+      flex-flow: row wrap; /* Wrap rows on tablets */
+    }
+  
+    .service-item {
+      flex: 1 1 45%; /* 45% width for 2 columns on tablet devices */
+      margin: 20px;
+    }
+  
+    .service-item img {
+      width: 50px; /* Adjust image size for smaller screens */
+      height: 50px;
+    }
+  
+    .service-item h2 {
+      font-size: 16px; /* Smaller font size for tablet */
+    }
+  }
+  
+  /* Small devices (mobile phones, below 768px) */
+  @media (max-width: 767px) {
+    .services {
+      flex-direction: column; /* Stack the service items in one column */
+    }
+  
+    .service-item {
+      flex: 1 1 100%; /* Full width for each service item */
+      margin: 15px 10px;
+    }
+  
+    .service-item img {
+      width: 40px; /* Smaller images for mobile screens */
+      height: 40px;
+    }
+  
+    .service-item h2 {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  }
+  

@@ -1,0 +1,91 @@
+
+ .banner-text-item .form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 70%;
+  padding: 1% 2%;
+  margin: 0 auto; /* Center the form */
+}
+
+ .banner-text-item input,
+ .banner-text-item .date,
+ .banner-text-item .book {
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.banner-text-item input {
+  width: 50%;
+  flex: 2;
+  background-color: rgb(223, 226, 232);
+}
+
+.banner-text-item .date {
+  width: 20%;
+  flex: 1;
+}
+
+.banner-text-item .book {
+  width: 20%;
+  flex: 1;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fde02f;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.banner-text-item .book:hover {
+  background-color: #fbbd08;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .banner-text-item .form {
+    width: 90%;
+    flex-flow: column nowrap; /* Stack items vertically on small screens */
+    padding: 2%;
+  }
+
+  .banner-text-item input,
+  .banner-text-item .date,
+  .banner-text-item .book {
+    margin-right: 0;
+    font-size: 16px;
+    width: 100%; /* Take full width on small screens */
+    margin-bottom: 10px; /* Add spacing between form elements */
+  }
+
+  .banner-text-item input,
+  .banner-text-item .date,
+  .banner-text-item .book {
+    width: 100%; /* Ensure full width on mobile screens */
+    margin-bottom: 10px; /* Add some space between form elements */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text-item input,
+  .banner-text-item .date,
+  .banner-text-item .book {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .banner-text-item .book {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

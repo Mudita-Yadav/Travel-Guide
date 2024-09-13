@@ -1,0 +1,26 @@
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa; /* Optional background color */
+  }
+  
+  .thank-you-container img {
+    width: 50%;  /* Adjust this value as needed for width */
+    max-width: 300px; /* Ensure the image doesn't stretch too large */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .thank-you-container p {
+    font-size: 1.2rem;
+  }
+  

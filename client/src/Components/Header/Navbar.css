@@ -1,0 +1,79 @@
+/* .navbar {
+    background-color: #1c1c1c;
+  }
+  
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #f2f2f2;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #fbbd08;
+  }
+  
+  .navbar-toggler {
+    border-color: #fbbd08;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmJiZDA4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNMiAxMmgxMXYtMUgydi0xaDF2MUgydi0xaDF2MUgydi0xaDF2MmgxeiIvPgogIDxwYXRoIGQ9Ik0yIDRoMTFWM0gyVjJINnYxaDFWNHoiLz4KICA8cGF0aCBkPSJNMiA3aDF2MUgydi0xaDF2MUgydi0xaDF2MUgydi0xaDF2MnoiLz4KPC9zdmc+");
+  }
+   */
+
+   /* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+  }
+  
+  .navbar ul li  {
+    margin: 0 15px;
+    text-transform: uppercase;
+    float: right;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    color: #fde02f;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      text-align: center;
+      display: none; /* Initially hidden */
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .navbar ul.active {
+      display: flex;
+    }
+  }
+  
